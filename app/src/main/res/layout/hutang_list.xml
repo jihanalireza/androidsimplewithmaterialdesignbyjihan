@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:padding="5dp"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/itemTransaksi"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/kodeHutang"
+                    android:text="TH1283659812213"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/keteranganHutang"
+                    android:layout_below="@id/kodeHutang"
+                    android:text="Saya Ngutang karena butuh uang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/nominalHutang"
+                    android:layout_alignParentEnd="true"
+                    android:text="Rp 1.000"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/statusHutang"
+                    android:layout_below="@id/nominalHutang"
+                    android:text="Hutang"
+                    android:textColor="@color/stsHutangLabel"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

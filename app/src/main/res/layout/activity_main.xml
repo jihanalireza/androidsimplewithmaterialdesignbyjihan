@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <ImageView
+            android:id="@+id/bgscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bgscrollview"
+    />
+
+    <ImageView
+            android:id="@+id/gambarSelfie"
+            android:layout_below="@id/bgscrollview"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/titleHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Dashboard"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="#ffffff"/>
+
+                <TextView
+                        android:id="@+id/childTitleHeader"
+                        android:layout_below="@+id/titleHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6 Item"
+                        android:textColor="#9f2d04"/>
+
+                <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:background="@drawable/bgoval"
+                        android:backgroundTint="#fd8607"
+                        android:src="@drawable/ic_account"
+                        android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_marginBottom="50dp">
+                <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                            android:id="@+id/gowesMenu"
+                            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_width="135dp"
+                            android:layout_height="190dp"
+                            android:layout_margin="10dp">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                            <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bgoval"
+                                    android:src="@drawable/ic_bikes"
+                                    android:padding="10dp"
+                                    android:tint="#09c93c"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="FRAGMENT"
+                                    android:textStyle="bold"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Transportasi sepeda darat"
+                                    android:padding="10dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                            android:id="@+id/dokuMenu"
+                            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_width="135dp"
+                            android:layout_height="190dp"
+                            android:layout_margin="10dp">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                            <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bgoval"
+                                    android:backgroundTint="#fb943b"
+
+                                    android:src="@drawable/ic_wallet"
+                                    android:padding="10dp"
+                                    android:tint="#a10702"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="TAB-PAGER"
+                                    android:textStyle="bold"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mecerdaskan pengguna"
+                                    android:padding="10dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_width="135dp"
+                            android:layout_height="190dp"
+                            android:layout_margin="10dp">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                            <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bgoval"
+                                    android:backgroundTint="#000"
+                                    android:src="@drawable/ic_location"
+                                    android:padding="10dp"
+                                    android:tint="#3bbaf1"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="GIT-PICK"
+                                    android:textStyle="bold"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Transportasi sepeda darat"
+                                    android:padding="10dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_width="135dp"
+                            android:layout_height="190dp"
+                            android:layout_margin="10dp">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                            <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bgoval"
+                                    android:backgroundTint="#000000"
+                                    android:src="@drawable/ic_do_not_disturb"
+                                    android:padding="10dp"
+                                    android:tint="#fd863e"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="GO-BLOK"
+                                    android:textStyle="bold"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mecerdaskan pengguna"
+                                    android:padding="10dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                            android:id="@+id/transaksiMenu"
+                            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:layout_margin="10dp">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                            <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bgoval"
+                                    android:backgroundTint="#000000"
+                                    android:src="@drawable/ic_transaction"
+                                    android:padding="10dp"
+                                    android:tint="#16f451"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="TRANSACTION"
+                                    android:textStyle="bold"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Transportasi sepeda darat"
+                                    android:padding="10dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            app:cardElevation="10dp"
+                            app:cardCornerRadius="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:layout_margin="10dp">
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                            <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bgoval"
+                                    android:src="@drawable/ic_fingerprint"
+                                    android:padding="10dp"
+                                    android:tint="#09c93c"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="FINGER-PRINT"
+                                    android:textStyle="bold"
+                            />
+
+                            <TextView
+                                    android:gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Transportasi sepeda darat"
+                                    android:padding="10dp"
+                                    android:textColor="@android:color/darker_gray"/>
+
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/galleryBtn"
+            android:layout_toStartOf="@id/cameraBtn"
+            android:layout_above="@id/cameraBtn"
+            android:layout_alignEnd="@+id/cameraBtn"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:borderWidth="0dp"
+            app:rippleColor="@color/colorPrimary"
+            android:src="@drawable/ic_gallery"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/cameraBtn"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@id/postBtn"
+            android:layout_above="@id/postBtn"
+            android:layout_alignEnd="@+id/postBtn"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:borderWidth="0dp"
+            app:rippleColor="@color/colorPrimary"
+            android:src="@drawable/ic_camera"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/postBtn"
+            android:layout_margin="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:borderWidth="0dp"
+            app:rippleColor="@color/colorPrimary"
+            android:src="@drawable/ic_add_white_24dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+</RelativeLayout>
